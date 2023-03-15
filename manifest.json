@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "chm8",
+  "version": "1.0",
+  "description": "Helps bad players to be good at chess",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.lichess.org/*"
+      ],
+      "js": [
+        "chm8.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": ["stockfish.js"]
+}
